@@ -31,7 +31,7 @@ A from-scratch feedforward neural network implementation in Numpy, designed for 
 
 ### 1. Clone the repositiory
 ```bash
-git clone 
+git clone https://github.com/AbhijithP96/mnist-ffn-numpy.git
 cd mnist-ffn-numpy
 ```
 
