@@ -99,7 +99,7 @@ Using any other activation for the output layer may lead to incorrect gradients 
 
 ### Tracking Runs
 
-👉 All runs are tracked in MlFlow at ```http://0.0.0.0:8080```
+👉 All runs are tracked in MLFLOW at ```http://0.0.0.0:8080```
 
 ## Loading Best Model & Inference
 

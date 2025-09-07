@@ -31,6 +31,7 @@ class Linear:
             input_dim (int): Dimension of the input features.
             output_dim (int): Dimension of the output features.
             activation (str): Activation function to use ('relu', 'sigmoid', 'softmax').
+            scale (str): Scale to initialize the weights of the layer.
         """
         self.input_dim = input_dim
         self.output_dim = output_dim

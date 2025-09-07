@@ -1,4 +1,5 @@
 import tensorflow as tf
+import numpy as np
 
 def get_data() -> tuple:
     """Load MNIST dataset using TensorFlow.
@@ -16,7 +17,18 @@ def get_data() -> tuple:
 
     return (x_train, y_train), (x_test, y_test), (x_dev, y_dev)
 
-def preprocess_data(train, dev, test):
+def preprocess_data(train: np.ndarray, dev: np.ndarray, test: np.ndarray) -> tuple:
+    """Normalise and flatten the dataset
+
+    Args:
+        train (np.ndarray): Training dataset
+        dev (np.ndarray): Validation Dataset
+        test (np.ndarray): Testing Dataset
+
+    Returns:
+        tuple: Normalised and flattened train, val and test sets
+    """
+
 
     (x_train, y_train) = train
     (x_dev, y_dev) = dev
