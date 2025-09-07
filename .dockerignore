@@ -1,0 +1,17 @@
+# Ignore MLflow run outputs
+mlruns/
+mlartifacts/
+
+# Ignore saved best models
+best_models/
+
+# ignore Python cache & virtualenvs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# pytest cache
+.pytest_cache/

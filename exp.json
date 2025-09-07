@@ -1,0 +1,28 @@
+{
+    "experiment_name": "Trial01",
+    "experiments": {
+        "1": {
+            "run_name": "default_run",
+            "layer_dict": [],
+            "model_params": {
+                "batch_size": 16,
+                "epochs": 10,
+                "learning_rate": 0.01
+            }
+        },
+        "2": {
+            "run_name": "4_layer_uniform_scale",
+            "layer_dict": [
+                {"input_dim": 784, "output_dim": 256, "activation": "relu", "scale": "uniform"},
+                {"input_dim": 256, "output_dim": 128, "activation": "relu", "scale": "uniform"},
+                {"input_dim": 128, "output_dim": 64,  "activation": "relu", "scale": "uniform"},
+                {"input_dim": 64,  "output_dim": 10,  "activation": "softmax", "scale": "uniform"}
+            ],
+            "model_params": {
+                "batch_size": 16,
+                "epochs": 10,
+                "learning_rate": 0.01
+            }
+        }
+    }    
+}
